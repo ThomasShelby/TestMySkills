@@ -32,7 +32,7 @@
 
 //====================================================================================================
 //======================================____GENERICS____==============================================
-import java.util.*;
+/*import java.util.*;
 
 class Apple{
 	private static long counter;
@@ -53,7 +53,21 @@ public class DoIt{
 		for(Apple c : apples)
 			System.out.println(c.id());
 	}
+}*/
+
+import java.util.*;
+
+public class DoIt{
+	public static void main(String[] args) {
+		Collection<Integer> c=new ArrayList<>();
+		for(int i=0;i<10;i++)
+			c.add(i);
+		for(Integer i:c)
+			System.out.print(i+", ");
+	}
 }
+
+
 
 
 
