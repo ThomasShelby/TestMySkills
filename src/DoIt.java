@@ -69,7 +69,7 @@ public class DoIt{
 
 //====================================================================================================
 //===================================___COLLECTION_VS_MAP___==========================================
-import java.util.*;
+/*import java.util.*;
 
 public class DoIt{
 	static Collection fill(Collection<String> collection){
@@ -96,9 +96,50 @@ public class DoIt{
 		System.out.println(fill(new TreeMap<String,String>()));
 		System.out.println(fill(new LinkedHashMap<String,String>()));
 	}
+}*/
+
+//====================================================================================================
+//======================================___Initial_Values___==========================================
+public class DoIt {
+private boolean t;
+private char c;
+private short sh;
+byte b;
+int i;
+long l;
+float f;
+double d;
+DoIt ssylka;
+
+void printInitialValues(){
+	System.out.println("Тип даних    Початкове значення");
+	System.out.println("bolean      =       "+t);
+	System.out.println("char        =       ["+c+"]");
+	System.out.println("short       =       "+sh);
+	System.out.println("byte        =       "+b);
+	System.out.println("int         =       "+i);
+	System.out.println("long        =       "+l);
+	System.out.println("float       =       "+f);
+	System.out.println("double      =       "+d);
+	System.out.println("ssylka      =       "+ssylka);
 }
 
+public void setDouble(double dd){
+	
+	this.d=dd;
+}
+public double getDouble(){
+	
+	return d;
+}
 
+	public static void main(String[] args) {
+		DoIt ob = new DoIt();
+		ob.printInitialValues();
+		ob.setDouble(2.5);
+		System.out.println(ob.getDouble());
+	}
+}
 
 
 
