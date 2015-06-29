@@ -100,7 +100,7 @@ public class DoIt{
 
 //====================================================================================================
 //======================================___Initial_Values___==========================================
-public class DoIt {
+/*public class DoIt {
 private boolean t;
 private char c;
 private short sh;
@@ -139,7 +139,34 @@ public double getDouble(){
 		ob.setDouble(2.5);
 		System.out.println(ob.getDouble());
 	}
+}*/
+
+//====================================================================================================
+//======================================___Selection_Sort___==========================================
+class DoIt{
+	public static void main(String[] args) {
+		int arr[]={3, 45, 2, 5, 22, 5,-5, 0, 10};
+		for(int i=0;i<arr.length;i++){
+			int min=arr[i];
+			int imin=i;
+			for(int j=i+1;j<arr.length;j++){
+				if(arr[j]<min){
+					min=arr[j];
+					imin=j;
+				}
+			}
+			if(i!=imin){
+				int temp=arr[i];
+				arr[i]=arr[imin];
+				arr[imin]=temp;
+			}
+		}
+		for(int r=0;r<arr.length;r++){
+		System.out.print(arr[r]+" ");
+		}
+	}
 }
+
 
 
 
