@@ -143,7 +143,7 @@ public double getDouble(){
 
 //====================================================================================================
 //======================================___Selection_Sort___==========================================
-class DoIt{
+/*class DoIt{
 	public static void main(String[] args) {
 		int arr[]={3, 45, 2, 5, 22, 5,-5, 0, 10};
 		for(int i=0;i<arr.length;i++){
@@ -165,10 +165,33 @@ class DoIt{
 		System.out.print(arr[r]+" ");
 		}
 	}
+}*/
+
+
+//====================================================================================================
+//=========================================___Bubble_Sort___==========================================
+class DoIt{
+	public static void main(String[] args) {
+		int arr[]={12,4,43,24,5,2,-4,-2,15,32};
+		for(int i=arr.length-1;i>=2;i--){
+			boolean sorted=true;
+			for(int j=0;j<i;j++){
+				if(arr[j]>arr[j+1]){
+					int temp=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=temp;
+					sorted=false;
+				}
+			}
+			if(sorted){
+				break;
+			}
+		}
+		for(int g=0;g<arr.length;g++){
+			System.out.print(arr[g]+" ");
+		}
+	}
 }
-
-
-
 
 
 
