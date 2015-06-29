@@ -170,7 +170,7 @@ public double getDouble(){
 
 //====================================================================================================
 //=========================================___Bubble_Sort___==========================================
-class DoIt{
+/*class DoIt{
 	public static void main(String[] args) {
 		int arr[]={12,4,43,24,5,2,-4,-2,15,32};
 		for(int i=arr.length-1;i>=2;i--){
@@ -191,10 +191,36 @@ class DoIt{
 			System.out.print(arr[g]+" ");
 		}
 	}
+}*/
+
+//====================================================================================================
+//=========================================___Classes___==============================================
+class DoItB{
+	double width;
+	double height;
+	double depth;
 }
+class DoIt{
+	public static void main(String[] args) {
+		DoItB obj1=new DoItB();
+		DoItB obj2=new DoItB();
+		double vol;
 
+		obj1.width=10;
+		obj1.height=20;
+		obj1.depth=15;
 
+		obj2.width=1;
+		obj2.height=2;
+		obj2.depth=5;
 
+		vol=obj1.width*obj1.height*obj1.depth;
+		System.out.println("obj1: "+vol);
+
+		vol=obj2.width*obj2.height*obj2.depth;
+		System.out.println("obj2: "+vol);
+	}
+}
 
 
 
